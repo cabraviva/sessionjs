@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Session.js example - save your name</title>
+    <!-- session.js -->
+    <script src="../session.js" charset="utf-8" type="text/javascript"></script>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter your Name:" value="">
+    <button type="button" onclick="session.name = document.querySelector('input').value;">Save!</button>
+  </body>
+  <script type="text/javascript">
+    document.querySelector('input').value = session.name;
+  </script>
+</html>
